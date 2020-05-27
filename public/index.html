@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./stylesheets/styles.css">
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+      <div class="addContainer">
+        <img id="add" src="./images/primary-tab-new.svg" width="50" height="50"/>
+      </div>
+        <div class="cardContainer"> 
+            <!-- cards -->
+    </div>
+
+  </div>
+  <div id="formModal" class="modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <!-- <h1 class="modal-title">Transaction</h1> -->
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <form class="transaction">
+                <div class="form-group">
+                    <label>Transaction Type</label>
+                    <select id="typeSelect" class="form-control">
+                        <option value="" selected disabled>Please select</option>
+                        <option>Deposit</option>
+                        <option>Expense</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>Amount</label>
+                    <div class="input-group">
+                        <span class="input-group-addon">$</span>
+                        <input id="amountInput" class="form-control" type="text" placeholder="Amount">
+                    </div>
+                  </div>
+                <div class="form-group">
+                    <label for="exampleFormControlTextarea1">Note</label>
+                    <textarea class="form-control" id="noteInput" rows="3"></textarea>
+                  </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <!-- <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+        </div>
+      </div>
+    </div>
+  <script src="./js/htmlElements.js"></script>
+  <script src="./js/dashboard.js"></script>
+  <script src="./js/transaction.js"></script>
+</body>
+</html>
