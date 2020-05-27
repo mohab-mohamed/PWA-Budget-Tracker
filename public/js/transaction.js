@@ -110,7 +110,7 @@ $(document).ready(function () {
 		if (type === "Purpose" || !amount) {
 			return;
 		}
-		addTransaction(type, amount, note);
+		await addTransaction(type, amount, note);
 		$('#typeSelect option').prop('selected', function() {
 			return this.defaultSelected;
 		});
