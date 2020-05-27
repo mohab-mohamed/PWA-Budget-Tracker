@@ -118,7 +118,7 @@ $(document).ready(function () {
 		$noteInput.val("");
 		await renderTransactions();
 		// location.reload();
-		setTimeout(function(){ console.log(refreshed) }, 1);
+		setTimeout(function(){ console.log("refreshed") }, 1);
 
 		const $formModal = $("#formModal");
 		
