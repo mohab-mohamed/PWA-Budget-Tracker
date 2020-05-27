@@ -116,7 +116,7 @@ $(document).ready(function () {
 		});
 		$amountInput.val("");
 		$noteInput.val("");
-		renderTransactions();
+		await renderTransactions();
 
 		setTimeout(function(){ console.log(refreshed) }, 1);
 
