@@ -118,6 +118,8 @@ $(document).ready(function () {
 		$noteInput.val("");
 		renderTransactions();
 
+		setTimeout(function(){ console.log(refreshed) }, 1);
+
 		const $formModal = $("#formModal");
 		
         $formModal.modal("hide");
