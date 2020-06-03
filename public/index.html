@@ -10,6 +10,15 @@
     <link rel="manifest" href="manifest.webmanifest" />
 </head>
 <body>
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("service-worker.js").then(reg => {
+          console.log("We found your service worker file!", reg);
+        });
+      });
+    }
+  </script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
       <div class="addContainer">
@@ -61,15 +70,7 @@
     </div>
   <script src="./js/htmlElements.js"></script>
   <script src="./js/transaction.js"></script>
-  <script>
-    if ("serviceWorker" in navigator) {
-      window.addEventListener("load", () => {
-        navigator.serviceWorker.register("service-worker.js").then(reg => {
-          console.log("We found your service worker file!", reg);
-        });
-      });
-    }
-  </script>
+  
 
 </body>
 </html>

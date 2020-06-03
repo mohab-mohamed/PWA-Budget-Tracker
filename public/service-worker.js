@@ -1,6 +1,5 @@
-const FILES_TO_CACHE = ["/", 
+const FILES_TO_CACHE = ["/",
                         "/index.html", 
-                        "/js/dashboard.js", 
                         "/js/htmlElements.js", 
                         "/js/transaction.js", 
                         "/stylesheets/styles.css"];
